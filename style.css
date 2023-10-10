@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Albert Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.error-message {
+  font-family: "Albert Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: none;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  color: black;
+  background-color: #fa8c8c;
+  border: solid #ff1111 3px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.error-sign {
+  display: flex;
+  cursor: pointer;
+  color: #d8000c;
+}
+
+.calculator {
+  background-color: rgba(135, 206, 250, 0.459);
+}
+.calculator .calculator-container {
+  border-radius: 5px;
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.calculator .calculator-container .first-row {
+  display: flex;
+}
+.calculator .calculator-container .btn {
+  cursor: pointer;
+  font-size: 40px;
+  border-radius: 10%;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.2rem;
+  background-color: rgb(238, 238, 238);
+}
+.calculator .calculator-container .display {
+  border: solid black 1px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 2%;
+  display: flex;
+  flex-grow: 1;
+}
+.number {
+  border: solid rgba(46, 137, 255, 0.3);
+}
+.number:hover {
+  border: solid rgba(46, 137, 255, 0.7);
+}
+
+.number:active {
+  border: solid rgba(46, 137, 255, 0.9);
+}
+
+.other-btn {
+  border: solid rgba(92, 0, 128, 0.3);
+}
+.other-btn:hover {
+  border: solid rgba(92, 0, 128, 0.7);
+}
+.other-btn:active {
+  border: solid rgba(92, 0, 128, 0.9);
+}
+
+.operator,
+.minus {
+  border: solid rgba(100, 238, 100, 0.3);
+}
+.operator:hover,
+.minus:hover {
+  border: solid rgba(100, 238, 100, 0.7);
+}
+
+.operator:active,
+.minus:active {
+  border: solid rgba(100, 238, 100, 0.9);
+}
+
+.display {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.previous-display,
+.current-display {
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.previous-display {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+}

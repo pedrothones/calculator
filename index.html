@@ -6,12 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      * {
-        background-color: black;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400&family=Montserrat:ital,wght@0,200;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Calculator</h1>
+      </div>
+      <div class="error-message">
+        <div class="error-text">We cannot divide by zero yet!</div>
+        <div class="error-sign">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            color="red"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12zm5.793-4.207a1 1 0 0 1 1.414 0L12 10.586l2.793-2.793a1 1 0 1 1 1.414 1.414L13.414 12l2.793 2.793a1 1 0 0 1-1.414 1.414L12 13.414l-2.793 2.793a1 1 0 0 1-1.414-1.414L10.586 12 7.793 9.207a1 1 0 0 1 0-1.414z"
+              fill="#0D0D0D"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="calculator">
+        <div class="calculator-container">
+          <div class="first-row">
+            <div class="display">
+              <div class="previous-display"></div>
+              <div class="current-display"></div>
+            </div>
+            <button class="btn other-btn clear" onclick="clearDisplay()">
+              C
+            </button>
+          </div>
+          <div class="other-rows">
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn operator">/</button>
+          </div>
+          <div class="other-rows">
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn operator">x</button>
+          </div>
+          <div class="other-rows">
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+            <button class="btn minus" onclick="handleMinus()">-</button>
+          </div>
+          <div class="other-rows">
+            <button class="btn other-btn decimal" onclick="addDecimal()">
+              .
+            </button>
+            <button class="btn number">0</button>
+            <button class="btn other-btn equal" onclick="getResult()">=</button>
+            <button class="btn operator">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
   <script src="script.js"></script>
 </html>
